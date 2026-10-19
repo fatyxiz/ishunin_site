@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Опрос</title>
+    <link rel="stylesheet" href="opros_style.css">
+    <meta name="viewport" content="widrh=device-width, inital-scale=1.">
+</head>
+<body>
+    <h1>Котики - самое прекрасное что может быть!</h1>
+    <label  for="fname"><h4>Какой вид кошек вы любите больше всего и почему?</h4></label><br>
+<input  type="text" id="fname" name="firstname" value="Здесь можете писать."><br>
+
+<label for="fname"><h4>Есть ли у вас домашний питомец? Если да опишите его и расскажите как вы за ним ухаживаете.</h4></label><br>
+<input  type="text" id="fname" name="firstname" value="Здесь можете писать."><br>
+
+<form action="process.php" method="POST">
+    <h4>Вам понравился наш сайт?</h4>
+    <div>
+    <input width="100%" type="radio" id="option1" name="question" value="1"><label  for="option2"> Да!</label>   
+
+    <input type="radio" id="option2" name="question" value="2"> <label for="option1">Нет!</label>
+        </div>
+</form>
+<button><a href ='./opros.html'><h2>Отправить</h2></a></button>
+<div style="display: flex; justify-content: space-around;">
+    <p><a href="./main.html">--->Главная<---</a></p></li>
+
+    <p><a href="./vidi.html">--->Виды котиков<---</a></p>
+
+    <p><a href="./facts.html">--->Интересные факты о котах<---</a></p>
+    </div>
+<script>document.getElementById('refreshButton').addEventListener('click', function() {
+    window.location.reload(); // Эта команда перезагружает текущую страницу
+});
+</script>
+</body>
+</html>
